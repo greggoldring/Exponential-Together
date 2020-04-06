@@ -1,14 +1,12 @@
-## Welcome to GitHub Pages
+# A COVID-19 contact tracing app that honours civil liberty
 
-You can use the [editor on GitHub](https://github.com/greggoldring/howareyourfeeling/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+We propose a voluntary COVID-19 Contact Tracing and Notification Platform. The app asks, “How are you feeling?” because we all care how each other are feeling. We want to know because we are afraid to go out for fear of an unseen virus. We want to know because we want help for our loved ones if they fall ill. We want to know because we want to feel safe. We want to know how you are feeling because we are concerned for your health. We want all this while maintaining confidence in our enduring freedom.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+## How to get involved
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+```
 Syntax highlighted code block
 
 # Header 1
