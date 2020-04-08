@@ -21,7 +21,8 @@ Transmission can occur in the following ways:
 3. Indirect via infected objects/surfaces that change location (parcels, public transportation, etc) 
 
 ##Solution
-
+An app that checks your wellbeing at regular intervals and screens you for symptoms of COVID-19. The app rewards you for participation and encourages you share the app with friends and check in on eachother if you aren't participating (presumably because you are feeling unwell). Before you venture out, you receive guidance on the precautions you should take and zones you should not visit. Zones are places outside your home where people typically intermingle such as businesses and public buildings. When you venture out, the app records your visits to zones and logs each time you come in close proximity to another app user. Collectively, all app users’ recent visits to zones are anonymously recorded and tagged with their health status. The anonymous logs of people they come in contact with are as well. When a person who recently visited a zone before you or came in close contact with you reports that they are infected, you and the other people they came in contact with are notified. The notifications include instructions on the steps they need to take to protect themselves and the people around them. So too when a /cluster/ of people who have visited a zone or been in proximity with someone you’ve been in close contact with begin /exhibiting symptoms/, you will receive a notification and guidance on the precautions you should take.
+For public health authorities, this app gives granular and predictive insight for contact tracing.
 
 ## How to get involved
 
