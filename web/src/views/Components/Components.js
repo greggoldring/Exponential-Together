@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="Exponential Health"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -53,7 +53,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>Exponential Health</h1>
                 <h3 className={classes.subtitle}>
                   A Badass Material-UI Kit based on Material Design.
                 </h3>
@@ -64,25 +64,9 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
+          <h1>Test</h1>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
       </div>
       <Footer />
     </div>
