@@ -51,13 +51,16 @@ export default class Home extends React.Component {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.products}>
         <Block flex>
+          <Text bold size={16} style={styles.title}>How Are You Feeling</Text>
           <Product product={products[0]} horizontal />
+          <Text bold size={16} style={styles.title}>Buddy Stats</Text>
           <Block flex row>
             <Product product={products[1]} style={{ marginRight: theme.SIZES.BASE }} />
-            <Product product={products[2]} />
+            <Product product={products[2]}  style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[3]} />
           </Block>
+          <Text bold size={16} style={styles.title}>Buddies who need a check-in</Text>
           <Product product={products[3]} horizontal />
-          <Product product={products[4]} full />
         </Block>
       </ScrollView>
     )
@@ -76,13 +79,6 @@ const styles = StyleSheet.create({
   home: {
     width: width,    
   },
-  search: {
-    height: 48,
-    width: width - 32,
-    marginHorizontal: 16,
-    borderWidth: 1,
-    borderRadius: 3,
-  },
   header: {
     backgroundColor: theme.COLORS.WHITE,
     shadowColor: theme.COLORS.BLACK,
@@ -94,23 +90,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     elevation: 4,
     zIndex: 2,
-  },
-  tabs: {
-    marginBottom: 24,
-    marginTop: 10,
-    elevation: 4,
-  },
-  tab: {
-    backgroundColor: theme.COLORS.TRANSPARENT,
-    width: width * 0.50,
-    borderRadius: 0,
-    borderWidth: 0,
-    height: 24,
-    elevation: 0,
-  },
-  tabTitle: {
-    lineHeight: 19,
-    fontWeight: '300'
   },
   divider: {
     borderRightWidth: 0.3,

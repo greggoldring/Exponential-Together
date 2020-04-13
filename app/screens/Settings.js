@@ -18,7 +18,7 @@ export default class Settings extends React.Component {
           <Block row middle space="between" style={styles.rows}>
             <Text size={14}>{item.title}</Text>
             <Switch
-              onValueChange={() => this.toggleSwitch(item.id)}
+              onValueChange={() => this.toggleSxwitch(item.id)}
               ios_backgroundColor={materialTheme.COLORS.SWITCH_OFF}
               thumbColor={Platform.OS === 'android' ? materialTheme.COLORS.SWITCH_OFF : null}
               trackColor={{ false: materialTheme.COLORS.SWITCH_OFF, true: materialTheme.COLORS.SWITCH_ON }}
