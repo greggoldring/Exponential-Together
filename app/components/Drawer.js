@@ -5,15 +5,6 @@ import { Block, Text, theme } from "galio-framework";
 import Icon from "./Icon";
 import materialTheme from "../constants/Theme";
 
-const proScreens = [
-  "Woman",
-  "Man",
-  "Kids",
-  "New Collection",
-  "Sign In",
-  "Sign Up"
-];
-
 class DrawerItem extends React.Component {
   renderIcon = () => {
     const { title, focused } = this.props;
@@ -114,25 +105,8 @@ class DrawerItem extends React.Component {
     }
   };
 
-  renderLabel = () => {
-    const { title } = this.props;
-
-    if (proScreens.includes(title)) {
-      return (
-        <Block middle style={styles.pro}>
-          <Text size={12} color="white">
-            PRO
-          </Text>
-        </Block>
-      );
-    }
-
-    return null;
-  };
-
   render() {
     const { focused, title, navigation } = this.props;
-    const proScreen = proScreens.includes(title);
     return (
       <TouchableOpacity style={{ height: 55 }} onPress={() => {navigation.navigate(title)}}>
         <Block
@@ -150,16 +124,11 @@ class DrawerItem extends React.Component {
             <Text
               size={18}
               color={
-                focused
-                  ? "white"
-                  : proScreen
-                  ? materialTheme.COLORS.MUTED
-                  : "black"
+                focused ? "white" : materialTheme.COLORS.MUTED
               }
             >
               {title}
             </Text>
-            {this.renderLabel()}
           </Block>
         </Block>
       </TouchableOpacity>
@@ -187,7 +156,7 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     shadowOpacity: 0.2
   },
-  pro: {
+  new: {
     backgroundColor: materialTheme.COLORS.LABEL,
     paddingHorizontal: 6,
     marginLeft: 8,

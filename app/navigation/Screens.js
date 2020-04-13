@@ -79,8 +79,8 @@ function ComponentsStack(props) {
         name="Components"
         component={ComponentsScreen}
         options={{
-          header: ({ navigation, scene }) => (
-            <Header title="Components" scene={scene} navigation={navigation} />
+          header: ({ scene }) => (
+            <Header title="Components" scene={scene}/>
           )
         }}
       />
@@ -95,14 +95,10 @@ function HomeStack(props) {
         name="Home"
         component={HomeScreen}
         options={{
-          header: ({ navigation, scene }) => (
+          header: ({ scene }) => (
             <Header
-              search
-              tabs
-              title="Welcome"
-              navigation={navigation}
+              title="WELCOME"
               scene={scene}
-              tabTitleRight="Option 2"
             />
           )
         }}
@@ -110,8 +106,8 @@ function HomeStack(props) {
         name="Pro"
         component={ProScreen}
         options={{
-          header: ({ navigation, scene }) => (
-            <Header back white transparent title="" navigation={navigation} scene={scene} />
+          header: ({ scene }) => (
+            <Header back white transparent title="" scene={scene} />
           ),
           headerTransparent: true
         }}
@@ -167,63 +163,6 @@ function AppStack(props) {
         }}
       />
       <Drawer.Screen
-        name="Woman"
-        component={ProScreen}
-        options={{
-          drawerIcon: ({ focused }) => (
-            <Icon
-              size={16}
-              name="md-woman"
-              family="ionicon"
-              color={focused ? "white" : materialTheme.COLORS.MUTED}
-              style={{ marginLeft: 4, marginRight: 4 }}
-            />
-          )
-        }}
-      />
-      <Drawer.Screen
-        name="Man"
-        component={ProScreen}
-        options={{
-          drawerIcon: ({ focused }) => (
-            <Icon
-              size={16}
-              name="man"
-              family="entypo"
-              color={focused ? "white" : materialTheme.COLORS.MUTED}
-            />
-          )
-        }}
-      />
-      <Drawer.Screen
-        name="Kids"
-        component={ProScreen}
-        options={{
-          drawerIcon: ({ focused }) => (
-            <Icon
-              size={16}
-              name="baby"
-              family="GalioExtra"
-              color={focused ? "white" : materialTheme.COLORS.MUTED}
-            />
-          )
-        }}
-      />
-      <Drawer.Screen
-        name="New Collection"
-        component={ProScreen}
-        options={{
-          drawerIcon: ({ focused }) => (
-            <Icon
-              size={16}
-              name="grid-on"
-              family="material"
-              color={focused ? "white" : materialTheme.COLORS.MUTED}
-            />
-          )
-        }}
-      />
-      <Drawer.Screen
         name="Profile"
         component={ProfileStack}
         options={{
@@ -269,7 +208,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Sign In"
-        component={ProScreen}
+        component={ComponentsStack}
         options={{
           drawerIcon: ({ focused }) => (
             <Icon
@@ -283,7 +222,7 @@ function AppStack(props) {
       />
       <Drawer.Screen
         name="Sign Up"
-        component={ProScreen}
+        component={ComponentsStack}
         options={{
           drawerIcon: ({ focused }) => (
             <Icon
