@@ -10,9 +10,9 @@ The Exponential Together Platform adds a location-based dimension to contact tra
 
 ## How you can help 
 
-We are assembling a core team to lead the project. If you are interested in working as part of the core team or if you are interested in contributing, please fill out this form and we will get back to you as soon as possible (hopefully in less than 24 hours unless we are overwhelmed).
+We are assembling a core team to lead the project. If you are interested in working as part of the core team or if you are interested in contributing, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSdTs4Nv3o14pxr8URNMpsXmFAQenURPScBCizGWKsULr9yLww/viewform?usp=sf_link "Join us!")  and we will get back to you as soon as possible (hopefully in less than 24 hours unless we are overwhelmed).
 
-If you are part of a public health authority, we want to talk. In order to tackle this problem as quickly as possible, this app is designed to be able to be used in your community without requiring your participation but of course, adoption by your constituents and our ability to adhere to your protocols are both dramatically improved with your support. Lives will be saved if we work together. We advocate that you support more than one project to address your community’s needs for contact tracing and self-assessment. The risk of failure increases if only one approach is taken. 
+If you are part of a public health authority, we want to talk. The best way to reach us directly is through an introduction our project's founder, [Gregg Oldring](https://docs.google.com/forms/d/e/1FAIpQLSdTs4Nv3o14pxr8URNMpsXmFAQenURPScBCizGWKsULr9yLww/viewform?usp=sf_link). In order to tackle this problem as quickly as possible, this app is designed to be able to be used in your community without requiring your participation but of course, adoption by your constituents and our ability to adhere to your protocols are both dramatically improved with your support. Lives will be saved if we work together. We advocate that you support more than one project to address your community’s needs for contact tracing and self-assessment. The risk of failure increases if only one approach is taken. 
 
 ## Project Framework
 
@@ -43,13 +43,13 @@ As a **public health authority**, I want to know as quickly as possible where in
 
 As a **citizen**, I want to be able to stop sharing my location history with my government after the epidemic has passed so that my civil liberties are not jeopardized. 
 
-##Background
+### Background
 Transmission can occur in the following ways:
 1. Direct person-to-person (being in close proximity at the same time).
 2. Indirect via infected locations/surfaces (being in the same location as the infected person, and up to 72 hours after them) 
 3. Indirect via infected objects/surfaces that change location (parcels, public transportation, etc) 
 
-##Solution
+## Solution
 An app that checks your wellbeing at regular intervals and screens you for symptoms of COVID-19. The app rewards you for participation and encourages you share the app with friends and check in on eachother if you aren't participating (presumably because you are feeling unwell). Before you venture out, you receive guidance on the precautions you should take and zones you should not visit. Zones are places outside your home where people typically intermingle such as businesses and public buildings. When you venture out, the app records your visits to zones and logs each time you come in close proximity to another app user. Collectively, all app users’ recent visits to zones are anonymously recorded and tagged with their health status. The anonymous logs of people they come in contact with are as well. When a person who recently visited a zone before you or came in close contact with you reports that they are infected, you and the other people they came in contact with are notified. The notifications include instructions on the steps they need to take to protect themselves and the people around them. So too when a /cluster/ of people who have visited a zone or been in proximity with someone you’ve been in close contact with begin /exhibiting symptoms/, you will receive a notification and guidance on the precautions you should take.
 For public health authorities, this app gives granular and predictive insight for contact tracing.
 
