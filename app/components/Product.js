@@ -14,12 +14,12 @@ class Product extends React.Component {
 
     return (
       <Block row={horizontal} card flex style={[styles.product, styles.shadow, style]}>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro', { product: product })}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile', { product: product })}>
           <Block flex style={[styles.imageContainer, styles.shadow]}>
             <Image source={{ uri: product.image }} style={imageStyles} />
           </Block>
         </TouchableWithoutFeedback>
-        <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro', { product: product })}>
+        <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile', { product: product })}>
           <Block flex space="between" style={styles.productDescription}>
             <Text size={14} style={styles.productTitle}>{product.title}</Text>
             <Text size={12} muted={!priceColor} color={priceColor}>${product.price}</Text>
@@ -39,6 +39,13 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     minHeight: 114,
   },
+  productsScroller: {
+    backgroundColor: theme.COLORS.WHITE,
+    marginVertical: theme.SIZES.BASE,
+    borderWidth: 0,
+    maxHeight: 114,
+    width: 320,
+  },
   productTitle: {
     flex: 1,
     flexWrap: 'wrap',
@@ -56,8 +63,10 @@ const styles = StyleSheet.create({
     marginTop: -16,
   },
   horizontalImage: {
-    height: 122,
-    width: 'auto',
+    marginTop: 15,
+    marginLeft: 15,
+    height: 85,
+    width: 85,
   },
   fullImage: {
     height: 215,

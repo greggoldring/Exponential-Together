@@ -47,22 +47,35 @@ export default class Home extends React.Component {
 
   renderProducts = () => {
     return (
-      <ScrollView
-        showsVerticalScrollIndicator={false}
-        contentContainerStyle={styles.products}>
-        <Block flex>
-          <Text bold size={16} style={styles.title}>How Are You Feeling</Text>
-          <Product product={products[0]} horizontal />
-          <Text bold size={16} style={styles.title}>Buddy Stats</Text>
-          <Block flex row>
+      <Block
+        contentContainerStyle={styles.products}
+        >
+        <Block flex style={styles.sectionMain}>
+          <Block bold size={16} style={styles.sectionTitleMain}>
+            <Text style={styles.sectionTitleMainText}>How Are You Feeling</Text>
+          </Block>
+          <Product product={products[0]} horizontal style={styles.howAreYouFeeling} />
+          <Text bold size={16} style={styles.sectionTitle}>Buddy Stats</Text>
+          <ScrollView
+              horizontal={true}
+              contentContainerStyle={styles.productsScroller}>
             <Product product={products[1]} style={{ marginRight: theme.SIZES.BASE }} />
             <Product product={products[2]}  style={{ marginRight: theme.SIZES.BASE }} />
             <Product product={products[3]} />
-          </Block>
-          <Text bold size={16} style={styles.title}>Buddies who need a check-in</Text>
-          <Product product={products[3]} horizontal />
+          </ScrollView>
+            <Text bold size={16} style={styles.sectionTitle}>Buddies who need a check-in</Text>
+          <ScrollView
+          horizontal={true}
+          contentContainerStyle={styles.productsScroller}>
+            <Product product={products[3]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} horizontal style={{ marginRight: theme.SIZES.BASE }} />
+          </ScrollView>
         </Block>
-      </ScrollView>
+      </Block>
     )
   }
 
@@ -95,8 +108,42 @@ const styles = StyleSheet.create({
     borderRightWidth: 0.3,
     borderRightColor: theme.COLORS.MUTED,
   },
+  sectionMain: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   products: {
+    marginLeft: 5,
     width: width - theme.SIZES.BASE * 2,
     paddingVertical: theme.SIZES.BASE * 2,
   },
+  sectionTitleMain: {
+    marginTop: 20,
+    marginLeft: 20,
+    width: 308,
+    height: 54,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomLeftRadius: 20,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 0,
+    backgroundColor: '#00b6b8',
+  },
+  sectionTitleMainText: {
+    alignContent: 'center',
+    color: '#fff',
+    fontSize: 20,
+  },
+  howAreYouFeeling: {
+    marginTop: -20,
+    marginLeft: 5,
+    marginRight: 5,
+  },
+  sectionTitle: {
+    marginTop: 20,
+    marginLeft: 20,
+  }
 });

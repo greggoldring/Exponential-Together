@@ -16,13 +16,13 @@ export default [
     price: 40,
   },
   {
-    title: 'Internet of Things (IoT) is Here to Stay',
+    title: 'Internet of Things',
     image: 'https://source.unsplash.com/I7BSOoPa5hM/840x840',
     price: 188,
     horizontal: true,
   },
   {
-    title: 'Coffee - A Drop of Happiness in a Cup',
+    title: 'Coffee - A Drop',
     image: 'https://source.unsplash.com/Ws4wd-vJ9M0/840x840',
     price: 180,
   },
