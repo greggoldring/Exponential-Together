@@ -33,7 +33,7 @@ We propose a voluntary COVID-19 **self-assessment** and **contact tracing** plat
 
 ## Problem
 
-/As a _____, I want _____ so that ____ stories/
+*Framed as, "As a _____, I want _____ so that ____." stories.*
 
 As a **citizen**, I want to be able to share my location history with public health so that I can be informed if I have visited a location that puts me at risk of contracting COVID-19.
 
