@@ -6,6 +6,16 @@
  * Personal Use License
  * by Alan Chang
  */
+
+.ray {
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
 @media only screen and (min-width: 1280px) {
   .modules {
     columns: 3 !important;
